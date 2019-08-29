@@ -1,0 +1,127 @@
+body {
+  min-height: 100vh;
+  background: url("../img/bg.jpg") no-repeat center center fixed;
+  color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.header,
+.footer {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 10px 5px;
+}
+
+.header p {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 2.25em;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 2;
+  letter-spacing: .4em;
+}
+
+
+.footer p,
+.menu-inferior ul li a {
+  font-size: .625em;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  color: #fff;
+}
+
+.menu-inferior ul li {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.menu {
+  align-self: center;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.opcoes {
+  margin: 70px 0;
+  padding: 100px;
+  height: 50vh;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.75;
+  color: #d9d9d9;
+}
+
+
+.opcoes:hover {
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, #C9C9C9 100%, #C9C9C9 100%),
+    linear-gradient(to bottom, #C9C9C9 100%, #C9C9C9 100%),
+    linear-gradient(to right, #C9C9C9 100%, #C9C9C9 100%),
+    linear-gradient(to bottom, #C9C9C9 100%, #C9C9C9 100%);
+  background-size: 100% 3px,
+    3px 100%,
+    100% 3px,
+    3px 100%;
+  background-position: 0 0,
+    100% 0,
+    100% 100%,
+    0 100%;
+  animation: bg 1.25s cubic-bezier(0.19, 1, 0.22, 1) 1;
+}
+
+.opcoes span {
+  display: block;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+
+@keyframes bg {
+  0% {
+    background-size: 0 3px,
+      3px 0,
+      0 3px,
+      3px 0;
+  }
+
+  25% {
+    background-size: 100% 3px,
+      3px 0,
+      0 3px,
+      3px 0;
+  }
+
+  50% {
+    background-size: 100% 3px,
+      3px 100%,
+      0 3px,
+      3px 0;
+  }
+
+  75% {
+    background-size: 100% 3px,
+      3px 100%,
+      100% 3px,
+      3px 0;
+  }
+
+  100% {
+    background-size: 100% 3px,
+      3px 100%,
+      100% 3px,
+      3px 100%;
+  }
+}
