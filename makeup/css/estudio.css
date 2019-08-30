@@ -31,10 +31,8 @@
 
 .area1 {
   grid-area: area1;
-  grid-row: 1/2;
 }
 
 .area2 {
   grid-area: area2;
-  grid-row: 1;
 }
