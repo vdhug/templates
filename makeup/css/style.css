@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,300,400&display=swap");
 
 body {
   color: #fff;
@@ -12,6 +12,7 @@ a:focus {
 
 .index-bg {
   background: url("../img/bg.jpg") no-repeat center center fixed;
+  background-size: cover;
 }
 
 * {
@@ -23,8 +24,10 @@ a:focus {
 }
 
 .grid-template {
-  grid-template:
-    "header header header"15vh ". content ."minmax(75vh, auto) "footer footer footer"minmax(8vh, auto) / minmax(auto, 120px) auto minmax(auto, 120px);
+  grid-template: "header header header" 15vh ". content ." minmax(75vh, auto) "footer footer footer" minmax(
+      8vh,
+      auto
+    ) / minmax(auto, 120px) auto minmax(auto, 120px);
 }
 
 /* Header */
@@ -34,29 +37,23 @@ a:focus {
 }
 
 .header p a {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   padding: 10px;
   font-size: 1.25em;
   text-transform: uppercase;
   color: #fff;
   line-height: 2;
-  letter-spacing: .4em;
+  letter-spacing: 0.4em;
 }
 
 .header p a:hover {
   background-repeat: no-repeat;
-  background-image: linear-gradient(to right, #C9C9C9 100%, #C9C9C9 100%),
-    linear-gradient(to bottom, #C9C9C9 100%, #C9C9C9 100%),
-    linear-gradient(to right, #C9C9C9 100%, #C9C9C9 100%),
-    linear-gradient(to bottom, #C9C9C9 100%, #C9C9C9 100%);
-  background-size: 100% 1px,
-    1px 100%,
-    100% 1px,
-    1px 100%;
-  background-position: 0 0,
-    100% 0,
-    100% 100%,
-    0 100%;
+  background-image: linear-gradient(to right, #c9c9c9 100%, #c9c9c9 100%),
+    linear-gradient(to bottom, #c9c9c9 100%, #c9c9c9 100%),
+    linear-gradient(to right, #c9c9c9 100%, #c9c9c9 100%),
+    linear-gradient(to bottom, #c9c9c9 100%, #c9c9c9 100%);
+  background-size: 100% 1px, 1px 100%, 100% 1px, 1px 100%;
+  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
   animation: bg-menu-inferior 1.25s cubic-bezier(0.19, 1, 0.22, 1) 1;
 }
 
@@ -69,9 +66,9 @@ a:focus {
 }
 
 .header-menu ul li a {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Courier New", Courier, monospace;
   padding: 10px;
-  font-size: .925rem;
+  font-size: 0.925rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #fff;
@@ -89,9 +86,9 @@ a:focus {
 
 .footer p,
 .menu-inferior ul li a {
-  font-size: .625em;
+  font-size: 0.625em;
   text-transform: uppercase;
-  letter-spacing: .1em;
+  letter-spacing: 0.1em;
   color: #fff;
 }
 
@@ -100,7 +97,7 @@ a:focus {
   margin-left: 10px;
 }
 
-.menu-inferior ul li+li {
+.menu-inferior ul li + li {
   margin-right: 1px;
 }
 
@@ -111,18 +108,12 @@ a:focus {
 .menu-inferior li a:hover {
   cursor: pointer;
   background-repeat: no-repeat;
-  background-image: linear-gradient(to right, #C9C9C9 100%, #C9C9C9 100%),
-    linear-gradient(to bottom, #C9C9C9 100%, #C9C9C9 100%),
-    linear-gradient(to right, #C9C9C9 100%, #C9C9C9 100%),
-    linear-gradient(to bottom, #C9C9C9 100%, #C9C9C9 100%);
-  background-size: 100% 1px,
-    1px 100%,
-    100% 1px,
-    1px 100%;
-  background-position: 0 0,
-    100% 0,
-    100% 100%,
-    0 100%;
+  background-image: linear-gradient(to right, #c9c9c9 100%, #c9c9c9 100%),
+    linear-gradient(to bottom, #c9c9c9 100%, #c9c9c9 100%),
+    linear-gradient(to right, #c9c9c9 100%, #c9c9c9 100%),
+    linear-gradient(to bottom, #c9c9c9 100%, #c9c9c9 100%);
+  background-size: 100% 1px, 1px 100%, 100% 1px, 1px 100%;
+  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
   animation: bg-menu-inferior 1.25s cubic-bezier(0.19, 1, 0.22, 1) 1;
 }
 
@@ -168,57 +159,35 @@ a:focus {
 .opcoes:hover {
   cursor: pointer;
   background-repeat: no-repeat;
-  background-image: linear-gradient(to right, #C9C9C9 100%, #C9C9C9 100%),
-    linear-gradient(to bottom, #C9C9C9 100%, #C9C9C9 100%),
-    linear-gradient(to right, #C9C9C9 100%, #C9C9C9 100%),
-    linear-gradient(to bottom, #C9C9C9 100%, #C9C9C9 100%);
-  background-size: 100% 3px,
-    3px 100%,
-    100% 3px,
-    3px 100%;
-  background-position: 0 0,
-    100% 0,
-    100% 100%,
-    0 100%;
+  background-image: linear-gradient(to right, #c9c9c9 100%, #c9c9c9 100%),
+    linear-gradient(to bottom, #c9c9c9 100%, #c9c9c9 100%),
+    linear-gradient(to right, #c9c9c9 100%, #c9c9c9 100%),
+    linear-gradient(to bottom, #c9c9c9 100%, #c9c9c9 100%);
+  background-size: 100% 3px, 3px 100%, 100% 3px, 3px 100%;
+  background-position: 0 0, 100% 0, 100% 100%, 0 100%;
   animation: bg 1.25s cubic-bezier(0.19, 1, 0.22, 1) 1;
 }
-
 
 /* Animação para linhas das opções principais */
 @keyframes bg {
   0% {
-    background-size: 0 3px,
-      3px 0,
-      0 3px,
-      3px 0;
+    background-size: 0 3px, 3px 0, 0 3px, 3px 0;
   }
 
   25% {
-    background-size: 100% 3px,
-      3px 0,
-      0 3px,
-      3px 0;
+    background-size: 100% 3px, 3px 0, 0 3px, 3px 0;
   }
 
   50% {
-    background-size: 100% 3px,
-      3px 100%,
-      0 3px,
-      3px 0;
+    background-size: 100% 3px, 3px 100%, 0 3px, 3px 0;
   }
 
   75% {
-    background-size: 100% 3px,
-      3px 100%,
-      100% 3px,
-      3px 0;
+    background-size: 100% 3px, 3px 100%, 100% 3px, 3px 0;
   }
 
   100% {
-    background-size: 100% 3px,
-      3px 100%,
-      100% 3px,
-      3px 100%;
+    background-size: 100% 3px, 3px 100%, 100% 3px, 3px 100%;
   }
 }
 
@@ -226,37 +195,22 @@ a:focus {
 
 @keyframes bg-menu-inferior {
   0% {
-    background-size: 0 1px,
-      1px 0,
-      0 1px,
-      1px 0;
+    background-size: 0 1px, 1px 0, 0 1px, 1px 0;
   }
 
   25% {
-    background-size: 100% 1px,
-      1px 0,
-      0 1px,
-      1px 0;
+    background-size: 100% 1px, 1px 0, 0 1px, 1px 0;
   }
 
   50% {
-    background-size: 100% 1px,
-      1px 100%,
-      0 1px,
-      1px 0;
+    background-size: 100% 1px, 1px 100%, 0 1px, 1px 0;
   }
 
   75% {
-    background-size: 100% 1px,
-      1px 100%,
-      100% 1px,
-      1px 0;
+    background-size: 100% 1px, 1px 100%, 100% 1px, 1px 0;
   }
 
   100% {
-    background-size: 100% 1px,
-      1px 100%,
-      100% 1px,
-      1px 100%;
+    background-size: 100% 1px, 1px 100%, 100% 1px, 1px 100%;
   }
 }
