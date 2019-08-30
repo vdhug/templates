@@ -8,7 +8,7 @@
 
 .item-academia {
   display: grid;
-  grid-template: "area1 area2"/ 1fr 1fr;
+  grid-template: "area1 area2"381px / 494px 494px;
 }
 
 .area1 {
