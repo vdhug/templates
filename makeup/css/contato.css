@@ -1,0 +1,135 @@
+.contato-bg {
+  background: #0e0f11;
+}
+
+.grid-template-contato {
+  display: grid;
+  grid-template: "contato-titulo"
+    "contato-imagem"
+    "depoimento"
+    "info"/ 1fr;
+  justify-content: center;
+}
+
+.contato-titulo {
+  grid-area: contato-titulo;
+  font-size: 2.625em;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.25;
+}
+
+.contato-imagem {
+  grid-area: contato-imagem;
+  margin: 15px 0;
+  justify-self: center;
+  border-radius: 4px;
+}
+
+.depoimento {
+  grid-area: depoimento;
+  justify-self: center;
+}
+
+.depoimento p {
+  font-size: .95rem;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.75;
+  max-width: 600px;
+  color: #999;
+}
+
+.depoimento p+p {
+  margin-top: 10px;
+}
+
+.depoimento span {
+  display: block;
+}
+
+.info {
+  margin: 40px 0;
+  grid-area: info;
+  display: grid;
+  grid-template: "endereco contato-form"
+    "contato-info contato-form"/ 1fr 2fr;
+}
+
+.endereco {
+  grid-area: endereco;
+  margin-bottom: 30px;
+}
+
+.endereco p,
+.contato-info p {
+  font-size: .95rem;
+  font-weight: 300;
+  line-height: 1.75;
+  color: #999;
+}
+
+.contato-info {
+  grid-area: contato-info;
+  align-self: start;
+}
+
+
+.contato-info a {
+  color: #999;
+  padding: 10px 0;
+  text-decoration: underline;
+  transition: .1s ease-in-out;
+}
+
+.contato-info a:hover {
+  text-decoration: none;
+}
+
+.contato-form {
+  grid-area: contato-form;
+  display: grid;
+}
+
+.contato-form input:focus,
+.contato-form textarea:focus {
+  outline: none;
+}
+
+.contato-form input,
+.contato-form textarea {
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+  background: transparent;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  line-height: 1.75;
+  border-bottom: 2px solid #999;
+  max-width: 80%;
+  margin-bottom: 5px;
+}
+
+.contato-form textarea {
+  resize: none;
+  height: 20vh;
+}
+
+input.btn {
+  cursor: pointer;
+  display: inline-block;
+  width: 90px;
+  margin-top: 40px;
+  padding: 2px 2px;
+  font-size: 1rem;
+  font-weight: 400;
+  border: 1px solid #C9C9C9;
+  text-transform: uppercase;
+  transition: .1s ease-in-out;
+}
+
+.btn:hover {
+  background: #C9C9C9;
+  color: #000;
+}

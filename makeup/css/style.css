@@ -1,6 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,300,400&display=swap');
+
 body {
-  background: url("../img/bg.jpg") no-repeat center center fixed;
   color: #fff;
+  font-weight: 300;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
+}
+
+a:focus {
+  outline: none;
+}
+
+.index-bg {
+  background: url("../img/bg.jpg") no-repeat center center fixed;
 }
 
 * {
@@ -13,7 +24,7 @@ body {
 
 .grid-template {
   grid-template:
-    "header header header"15vh ". content ."minmax(78vh, auto) "footer footer footer"5vh / minmax(auto, 120px) auto minmax(auto, 120px);
+    "header header header"15vh ". content ."minmax(75vh, auto) "footer footer footer"minmax(8vh, auto) / minmax(auto, 120px) auto minmax(auto, 120px);
 }
 
 /* Header */
@@ -22,13 +33,31 @@ body {
   align-content: center;
 }
 
-.header p {
+.header p a {
   font-family: 'Courier New', Courier, monospace;
+  padding: 10px;
   font-size: 1.25em;
   text-transform: uppercase;
   color: #fff;
   line-height: 2;
   letter-spacing: .4em;
+}
+
+.header p a:hover {
+  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, #C9C9C9 100%, #C9C9C9 100%),
+    linear-gradient(to bottom, #C9C9C9 100%, #C9C9C9 100%),
+    linear-gradient(to right, #C9C9C9 100%, #C9C9C9 100%),
+    linear-gradient(to bottom, #C9C9C9 100%, #C9C9C9 100%);
+  background-size: 100% 1px,
+    1px 100%,
+    100% 1px,
+    1px 100%;
+  background-position: 0 0,
+    100% 0,
+    100% 100%,
+    0 100%;
+  animation: bg-menu-inferior 1.25s cubic-bezier(0.19, 1, 0.22, 1) 1;
 }
 
 .header-menu {
@@ -84,6 +113,7 @@ body {
 .header,
 .footer {
   display: flex;
+  flex-wrap: wrap;
   padding: 10px 25px;
   justify-content: space-between;
 }
@@ -91,7 +121,13 @@ body {
 /* Content */
 .content {
   grid-area: content;
+  display: grid;
+}
+
+.content-index {
+  grid-area: content;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -101,7 +137,7 @@ body {
   height: 50vh;
   font-size: 1em;
   text-transform: uppercase;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Raleway", Arial, Helvetica, sans-serif;
   line-height: 1.75;
   color: #d9d9d9;
 }
