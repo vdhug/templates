@@ -64,6 +64,23 @@ a:focus {
   align-self: center;
 }
 
+.header-menu ul li {
+  display: inline-block;
+}
+
+.header-menu ul li a {
+  font-family: 'Courier New', Courier, monospace;
+  padding: 10px;
+  font-size: .925rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.header-menu ul li a:hover {
+  text-decoration: underline;
+}
+
 /* Footer */
 
 .footer {
