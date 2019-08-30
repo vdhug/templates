@@ -24,10 +24,8 @@ a:focus {
 }
 
 .grid-template {
-  grid-template: "header header header" 15vh ". content ." minmax(75vh, auto) "footer footer footer" minmax(
-      8vh,
-      auto
-    ) / minmax(auto, 120px) auto minmax(auto, 120px);
+  grid-template: "header header header"15vh ". content ."minmax(75vh, auto) "footer footer footer"minmax(8vh,
+      auto) / minmax(auto, 120px) auto minmax(auto, 120px);
 }
 
 /* Header */
@@ -75,7 +73,7 @@ a:focus {
 }
 
 .header-menu ul li a:hover {
-  text-decoration: underline;
+  color: #ccc;
 }
 
 /* Footer */
@@ -97,7 +95,7 @@ a:focus {
   margin-left: 10px;
 }
 
-.menu-inferior ul li + li {
+.menu-inferior ul li+li {
   margin-right: 1px;
 }
 
