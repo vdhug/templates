@@ -79,6 +79,7 @@ body {
 .home-img {
     height: calc(100vh - 62px);
     background: url("../img/home.jpg") no-repeat center center;
+    background-size: cover;
 }
 
 .home h3 {
