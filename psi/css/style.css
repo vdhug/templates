@@ -231,7 +231,7 @@ body {
 }
 
 .contato-info p+p {
-    margin-bottom: 5px;
+    margin-bottom: 15px;
 }
 
 .redes {
@@ -240,16 +240,15 @@ body {
 
 .redes li {
     display: inline-block;
+    margin-right: 10px;
 }
 
 .redes li a {
     padding: 10px;
     color: #050C0C;
-    font-size: 1rem;
-}
-
-.redes li a:first-child {
-    padding-left: 0px;
+    font-size: .95rem;
+    border-radius: 50%;
+    background: #BF8C7A;
 }
 
 .formulario input,
