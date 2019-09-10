@@ -200,6 +200,8 @@ body {
 
 .contato-descricao {
   grid-area: descricao;
+  display: grid;
+  grid-template-rows: auto 1fr;
   margin-right: 60px;
 }
 
