@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather:300i,400|Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merriweather:300i,400|Open+Sans:300,400&display=swap');
 
 /* Reset some general styles */
 body,
@@ -6,6 +6,7 @@ p,
 h1,
 h2,
 h3,
+h4,
 ul,
 li {
     margin: 0px;
@@ -34,6 +35,11 @@ body {
     color: #050C0C;
 }
 
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
 .header {
     padding: 10px;
     height: 62px;
@@ -45,13 +51,13 @@ body {
 .header h1 {
     font-weight: 300;
     font-style: italic;
-    font-size: 1.375rem;
+    font-size: 1.3rem;
     line-height: 1.4rem;
-    padding: 10px 0;
 }
 
 .menu li {
     display: inline-block;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
 .menu li:last-child {
@@ -59,7 +65,7 @@ body {
 }
 
 .menu li a {
-    font-size: 1rem;
+    font-size: .95rem;
     padding: 10px;
     color: #050C0C;
 }
@@ -72,10 +78,229 @@ body {
 
 .home-img {
     height: calc(100vh - 62px);
-    background: url("../img/girassol.jpg") no-repeat center center;
+    background: url("../img/home.jpg") no-repeat center center;
 }
 
 .home h3 {
+    font-size: 2.85rem;
+    text-align: center;
+    font-weight: 400;
     justify-self: center;
     align-self: center;
+    text-align: center;
+    margin: 0px 20px;
+}
+
+.home h3 span {
+    display: block;
+    margin-top: 20px;
+    font-size: .95rem;
+    font-weight: 300;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+.sobre {
+    margin: 40px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.sobre h4 {
+    text-align: center;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+}
+
+.sobre h1 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 2.85rem;
+    margin-bottom: 20px;
+}
+
+.sobre p {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 620px;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    font-size: .95rem;
+    margin-bottom: 20px;
+}
+
+.sobre div {
+    height: calc(600px / 2);
+}
+
+.sobre img {
+    margin: 0 auto;
+}
+
+.servicos {
+    padding-top: 340px;
+    background: #F2F2F2;
+}
+
+.servicos ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.servicos ul li {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+.servicos ul li h3 {
+    padding-top: 30px;
+    text-align: center;
+    font-weight: 400;
+    max-width: 300px;
+    margin: 0 auto;
+    font-size: 2.75rem;
+    margin-bottom: 20px;
+}
+
+
+.servicos ul li:nth-child(3n +1) {
+    background: #CFF4EC;
+}
+
+.servicos ul li:nth-child(3n +2) {
+    background: #F2F2F1;
+}
+
+.servicos ul li:nth-child(3n) {
+    background: #E2F6CD;
+}
+
+.servicos ul li p {
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.contato {
+    margin: 40px 0;
+    display: grid;
+    grid-template: "titulo .""descricao formulario"/ 1fr 1fr;
+}
+
+.contato h3 {
+    grid-area: titulo;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+    margin-bottom: 30px;
+}
+
+.contato-descricao {
+    grid-area: descricao;
+    margin-right: 60px;
+}
+
+.contato-descricao p {
+    font-weight: 300;
+    font-size: .90rem;
+    line-height: 1.4rem;
+    margin-bottom: 20px;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+
+}
+
+.contato-form {
+    grid-area: formulario;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+
+}
+
+.contato-form h4 {
+    font-size: .90rem;
+    line-height: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.contato-info p {
+    max-width: 300px;
+    margin-bottom: 20px;
+}
+
+.contato-info p+p {
+    margin-bottom: 5px;
+}
+
+.redes {
+    margin-bottom: 20px;
+}
+
+.redes li {
+    display: inline-block;
+}
+
+.redes li a {
+    padding: 10px;
+    color: #050C0C;
+    font-size: 1rem;
+}
+
+.redes li a:first-child {
+    padding-left: 0px;
+}
+
+.formulario input,
+.formulario textarea {
+    display: block;
+    width: 100%;
+    border: none;
+    font-size: .95rem;
+    border-bottom: 1px solid #050C0C;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+
+.formulario textarea {
+    height: 100px;
+    resize: none;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+    outline: none;
+}
+
+input.btn {
+    margin-top: 20px;
+    background: #BF8C7A;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: none;
+}
+
+
+.footer {
+    padding: 20px 10px;
+    background: #F2F2F2;
+
+}
+
+.footer p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.65rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.footer a {
+    padding: 10px 0;
+    color: #BF204A;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }
