@@ -249,6 +249,12 @@ body {
     font-size: .95rem;
     border-radius: 50%;
     background: #BF8C7A;
+    transition: all ease-in-out .2s;
+}
+
+.redes li a:hover {
+    background: #8C4C35;
+    color: #F2F2F2;
 }
 
 .formulario input,
@@ -279,6 +285,12 @@ input.btn {
     cursor: pointer;
     text-transform: uppercase;
     border: none;
+    transition: all ease-in-out .2s;
+}
+
+input.btn:hover {
+    background: #8C4C35;
+    color: #F2F2F2;
 }
 
 
@@ -302,5 +314,6 @@ input.btn {
 }
 
 .footer a:hover {
+    color: #8C4C35;
     text-decoration: underline;
 }
