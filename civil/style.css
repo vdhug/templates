@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant:400,500,500i&display=swap');
+
+/* Reset some general styles */
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+ul,
+li {
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0;
+}
+
+blockquote {
+    display: block;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Cormorant', serif;
+    font-weight: 400;
+    color: #212529;
+}
+
+a {
+    color: #212529;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.titulo {
+    font-size: 1.953rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.titulo::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 2px;
+    background: #212529;
+    margin: 10px auto 0;
+}
+
+/* Header */
+
+.header {
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo,
+.menu {
+    padding: 15px 0px;
+}
+
+.menu li {
+    display: inline-block;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+
+.menu li+li {
+    margin-left: 5px;
+}
+
+.menu li a {
+    padding: 10px;
+}
+
+/* Intro */
+.intro {
+    /* height: calc(100vh - 120px); */
+    height: 400px;
+    background: url('index.jpg') no-repeat center center;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.intro::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    height: 400px;
+    width: 50vw;
+    background: rgba(255, 255, 255, .8);
+}
+
+.intro-quote {
+    z-index: 1;
+}
+
+.intro-quote p {
+    display: block;
+    max-width: 500px;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 3.052rem;
+    line-height: 1.2;
+}
+
+.intro-quote cite {
+    display: block;
+    margin-top: 2px;
+    font-size: 1.563rem;
+}
+
+/* Filosofias */
+
+.filosofia {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.filosofia p {
+    max-width: 770px;
+    margin: 40px auto 0;
+    text-align: center;
+    font-size: 1.25rem;
+    margin-bottom: 40px;
+}
+
+/* Residencias */
+.residencias {
+    background: #F4F4F4;
+}
+
+.residencias h1 {
+    padding-top: 60px;
+}
+
+.items {
+    margin-top: 60px;
+
+}
+
+.item {
+    display: inline-block;
+    width: ;
+    height: 350px;
+    margin-bottom: 30px;
+}
+
+.residencia-info {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.residencia-info p,
+.residencia-info span {
+    align-self: center;
+}
